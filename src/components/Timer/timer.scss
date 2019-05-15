@@ -1,0 +1,51 @@
+$fontColor: #DFEAFC;
+.ant-calendar-time-picker-btn {
+  display: none !important;
+}
+.timer{
+  float: left;
+  .ant-calendar-picker{
+    width: 220px !important;
+    .ant-calendar-picker-input{
+      .ant-calendar-range-picker-input{
+      //  vertical-align: inherit;
+        color: $fontColor;
+      }
+      .ant-calendar-range-picker-separator{
+        line-height: 34px;
+        color: $fontColor;
+      //  vertical-align: inherit;
+      }
+      .ant-calendar-picker-clear, .ant-calendar-picker-icon{
+        right: 10px;
+        width: 16px;
+        height: 16px;
+        margin-top: -8px;
+        svg{
+          width: 16px;
+          height: 16px;
+          fill: $fontColor;
+        }
+      }
+      .ant-calendar-picker-clear{
+        background-color: #243F7A;
+      }
+    }
+  }
+  .ant-input{
+    height: 36px;
+    padding: 0 10px 0 2px;
+    text-align: left;
+    border: 1px solid #243F7A;
+    background-color: #243F7A;
+  }
+  .time{
+    margin-right: 20px;
+  }
+  .contrast{
+    margin-left: 20px;
+  }
+  a{
+    color: $fontColor;
+  }
+}

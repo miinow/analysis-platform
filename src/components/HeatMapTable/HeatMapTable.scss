@@ -1,0 +1,57 @@
+.heat-table-wrapper {
+  width: 100%;
+
+  h4 {
+    font-size: 18px;
+    margin: 0;
+    padding: 20px 0 20px 20px;
+    color: #DFEAFC;
+    font-weight: normal;
+  }
+
+  table {
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 14px;
+
+    th, td {
+      width: 9.09%;
+      text-align: center;
+      height: 50px;
+      box-sizing: border-box;
+      font-weight: normal;
+    }
+    th {
+      border-right: 1px solid rgba(255, 255, 255, 0.2);
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #DFEAFC;
+    }
+    td {
+      cursor: pointer;
+      color: rgba(0, 0, 0, 0.6);
+    }
+    .first-cells {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      color: #DFEAFC;
+      cursor: default;
+    }
+
+    .selected-cell {
+      filter: brightness(1.2);
+    }
+  }
+}
+
+.heat-map-tooltip {
+  position: fixed;
+  z-index: 999;
+  text-align: center;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #DFEAFC;
+
+  img {
+    vertical-align: middle;
+    transform: translateY(-1px);
+  }
+}

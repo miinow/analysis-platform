@@ -1,0 +1,55 @@
+{
+  "extends": "eslint-config-ali/react",
+  "parser": "babel-eslint",
+  "rules": {
+    "import/prefer-default-export": 0,
+    "react/no-array-index-key": 0,
+    "react/no-find-dom-node": 0,
+    "no-console": 0,
+    "react/forbid-prop-types": 0,
+    "no-script-url": 0,
+    "quotes": 0,
+    "no-param-reassign": 0,
+    "comma-dangle": [
+      0,
+      1
+    ],
+    "indent": 0,
+    "react/jsx-indent": 0,
+    "react/jsx-indent-props": 0,
+    "spaced-comment": 1,
+    "arrow-parens": 0,
+    "implicit-arrow-linebreak": 0,
+    "lines-between-class-members": 0,
+    "prefer-template": 0,
+    "no-bitwise": 0,
+    "no-debugger": 0,
+    "space-before-function-paren": 0,
+    "one-var": 0,
+    "dot-notation":0,
+    "no-return-assign": 0,
+    "no-unused-vars": 0,
+    "no-nested-ternary": 0,
+    "no-restricted-globals" : 0,
+    "eslint-disable-next-line" : 0,
+    "array-callback-return": 0,
+    "max-len": 0,
+    "no-useless-concat":0,
+    "no-prototype-builtins": 0,
+    "quote-props": 0,
+    "one-var-declaration-per-line": 0
+  },
+  "plugins": [
+    "react",
+    "eslint-plugin-react"
+  ],
+  "globals": {
+    "React": true,
+    "ReactDOM": true,
+    "Immutable": true,
+    "ImmutableMap": true,
+    "ImmutableSet": true,
+    "ImmutableList": true,
+    "window": true
+  }
+}

@@ -1,0 +1,103 @@
+$inner-size: 7.3em;
+
+.login-wrapper {
+  background: url("../../assets/image/bg.jpg") no-repeat center center;
+  background-size: cover;
+  position: absolute;
+  top:0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  .login-main {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .login-logo {
+      margin-right: 50px;
+      position: relative;
+
+      .ring-img {
+        width: $inner-size;
+        opacity: 0.4;
+      }
+
+      .title-img {
+        width: $inner-size - 0.3;
+        position: absolute;
+        top: $inner-size / 2 - 1.22;
+        right: $inner-size / 2 - 1.22;
+      }
+    }
+
+    .login-form {
+      background: url("../../assets/image/frame.png") no-repeat center center;
+      background-size: cover;
+      width: 450px;
+      height: 268px;
+      box-sizing: border-box;
+      padding-top: 46px;
+
+      .ant-form-item-control {
+        text-align: center;
+      }
+
+      .ant-form-item-control-wrapper {
+        .ant-input {
+          font-size: 18px;
+          height: 36px;
+          width: 280px;
+          background: #170039;
+          border: none;
+          color: #fff;
+        }
+      }
+
+      .ant-btn {
+        font-size: 18px;
+        text-align: center;
+        height: 36px;
+        width: 280px;
+      }
+
+      .has-error .ant-form-explain, .has-error .ant-form-split {
+        color: #d9534f;
+        //background-color: #d9534f;
+        line-height: 20px;
+        width: 280px;
+        margin: 0 auto;
+        text-align: left;
+      }
+    }
+  }
+
+  .login-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 80px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  //消除google浏览器黄色框
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 1000px #170039 inset !important;
+    -webkit-text-fill-color: #fff !important;
+    caret-color: #fff !important;
+  }
+}
+
+input:focus {
+  outline:none;
+}
+::selection {
+  background: #d0cdcd !important;
+}

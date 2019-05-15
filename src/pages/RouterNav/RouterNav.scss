@@ -1,0 +1,107 @@
+.router-nav-wrapper {
+
+  .menu-wrapper {
+
+    .user-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 50px 0 30px;
+      color: #8CA2CF;
+      font-size: 14px;
+
+      img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+      }
+
+      .user-logout {
+        margin-left: 14px;
+        cursor: pointer;
+        font-size: 12px;
+      }
+      .user-logout:hover {
+        color: #fff;
+      }
+    }
+
+    .sub-text {
+      margin-left: 18px;
+    }
+
+    .ant-menu-submenu-title {
+      height: 60px;
+      line-height: 60px;
+      font-size: 16px;
+    }
+    .ant-menu-item {
+      height: 50px;
+      line-height: 50px;
+      font-size: 16px;
+    }
+    .ant-menu-dark {
+      background: #244787;
+    }
+  }
+
+  .menu-icon {
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+    vertical-align: sub;
+  }
+
+  .ant-menu-item-selected, .ant-menu-item-active {
+    color: #01EBFC !important;
+    background-color: #244787 !important;
+  }
+
+  .ant-menu-submenu-selected {
+    background-color: #142C68;
+  }
+
+  .ant-menu-sub {
+    background-color: #12275B !important;
+    box-shadow: none !important;
+
+    .ant-menu-item {
+      border-top: 1px solid #244787;
+      margin: 0;
+    }
+    .ant-menu-item-selected {
+      background-color: #12275B !important;
+      border-left: 4px solid #01EBFC;
+    }
+    .ant-menu-item-active {
+      background-color: #12275B !important;
+    }
+  }
+
+  .ant-layout-sider-children {
+    background: #244787;
+  }
+
+  .ant-layout-sider {
+    flex: 0 0 256px !important;
+    max-width: 256px !important;
+    min-width: 256px !important;
+    width: 256px !important;
+  }
+
+  .main-content-wrapper {
+    margin-left: 256px;
+    min-width: 1090px;
+    background: linear-gradient(#305896, #192668);
+
+    .ant-layout-content {
+      //padding: 0;
+    }
+    .ant-layout-footer {
+      background: rgba(0, 0, 0, 0);
+      color: #DFEAFC;
+    }
+  }
+
+}

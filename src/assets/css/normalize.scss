@@ -1,0 +1,58 @@
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img, table, tr, th, td {
+  margin: 0;
+  padding: 0;
+}
+/**
+ * Add the correct display in iOS 4-7.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/*各浏览器显示不同，去掉蓝色边框*/
+fieldset, img, input, button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline-style: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/*去掉行内替换元素空白缝隙*/
+//select, input {
+//  vertical-align: middle;
+//}
+
+/*去掉行内替换元素空白缝隙*/
+img {
+  border: 0;
+  vertical-align: middle;
+}
+/*清除浮动*/
+.clear:before, .clear:after {
+  content: "";
+  display: table;
+}
+
+.clear:after {
+  clear: both;
+}
+
+.clear {
+  *zoom: 1; /*IE/7/6*/
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.ellipsis{
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

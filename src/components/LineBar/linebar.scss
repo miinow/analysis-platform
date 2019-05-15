@@ -1,0 +1,32 @@
+.tooltip-box {
+  .arrow-down, .arrow-up {
+    display: inline-block;
+    width:10px;
+    height: 13px;
+    margin-right: 5px;
+  }
+  .arrow-down {
+    background: url(../../assets/image/down.png) center;
+  }
+  .arrow-up {
+    background: url(../../assets/image/up.png) center;
+  }
+  .ratio {
+    // margin-left: 10px;
+  }
+}
+.line-bar {
+  position: relative;
+
+  .no-data-box {
+    float: left;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    box-sizing: border-box;
+
+    h4 {
+      color: #DFEAFC;
+    }
+  }
+}

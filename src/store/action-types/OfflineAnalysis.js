@@ -1,0 +1,10 @@
+// 开始时间段
+export const OFFLINE_STARTDATE = 'OFFLINE_STARTDATE';
+// 对比时间段
+export const OFFLINE_COMPARESTARTDATE = 'OFFLINE_COMPARESTARTDATE';
+// 同比 环比 对比时间
+export const OFFLINE_COMPARETYPE = 'OFFLINE_COMPARETYPE';
+// 销售渠道
+export const OFFLINE_CHANNEL = 'OFFLINE_CHANNEL';
+// 销售与会员趋势
+export const OFFLINE_SALERADIO = 'OFFLINE_SALERADIO';

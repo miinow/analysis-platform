@@ -1,0 +1,74 @@
+$red: #FB5459;
+$green-arrow: #4EA902;
+$red-arrow: #B42101;
+.circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+}
+.map-charts {
+  .ring-order, .ring{
+    position: relative;
+    padding-left: 14px;
+    cursor: pointer;
+  }
+  span.high{
+    color: #DFEAFC
+  }
+  span.high:before{
+    background-color: $red
+  }
+  .ring-order, .ring{
+    color: #b3b3b3;
+  }
+  .ring-order{
+    margin-right: 20px;
+  }
+  .ring-order:before, .ring:before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 0;
+    background-color: #b3b3b3;
+    @extend .circle;
+  }
+}
+.tooltip{
+  text-align: left;
+}
+.arrow-green, .arrow-red,.arrow-no {
+  display: inline-block;
+  width: 60px;
+}
+.arrow-no {
+  padding-left: 3px;
+}
+.arrow-green{
+  color: $green-arrow;
+}
+//.arrow-green:before, .arrow-red:before{
+//  position: absolute;
+//  top: 1px;
+//  left: 10px;
+//  content: "";
+//  display: inline-block;
+//  width: 20px;
+//  height: 20px;
+//}
+.arrow-green i, .arrow-red i{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding-left: 20px;
+  font-style: normal;
+  vertical-align: middle;
+}
+.arrow-green i{
+  background: url("../../assets/image/up.png") no-repeat center;
+}
+.arrow-red i{
+  background: url("../../assets/image/down.png") no-repeat center;
+}
+.arrow-red{
+  color: $red-arrow;
+}

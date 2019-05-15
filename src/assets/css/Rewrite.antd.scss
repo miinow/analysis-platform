@@ -1,0 +1,88 @@
+.ant-layout-content{
+  padding: 20px;
+  //background-image: -webkit-linear-gradient(top, #244787, #0B1C50);
+}
+// 表格
+.ant-table-content{
+  .ant-table-thead th{
+    background-color: #E6E6E6;
+    border-radius: 0;
+  }
+}
+.ant-table-bordered .ant-table-thead > tr > th{
+  color: #333;
+}
+.ant-table-bordered .ant-table-thead > tr > th,
+.ant-table-bordered .ant-table-tbody > tr > td,
+.ant-table-tbody > tr > td{
+  border-right: 1px solid #F0F0F0;
+  text-align: center;
+}
+// 分页
+.ant-pagination-prev .ant-pagination-item-link,
+.ant-pagination-next .ant-pagination-item-link,
+.ant-pagination-item,
+.ant-pagination-options-quick-jumper input{
+  width: 32px;
+  height: 32px;
+}
+.ant-pagination-prev .ant-pagination-item-link,
+.ant-pagination-next .ant-pagination-item-link,
+.ant-pagination-item,
+.ant-select-selection,
+.ant-pagination-options-quick-jumper input{
+  border-radius: 7px;
+}
+.ant-pagination-prev .ant-pagination-item-link,
+.ant-pagination-next .ant-pagination-item-link,
+.ant-pagination-item,
+.ant-select-selection,
+.ant-pagination-options-quick-jumper input,
+.ant-input{
+  border: 1px solid #e7e7e7;
+}
+.ant-form label{
+  font-size: 14px;
+  color: #333;
+}
+.ant-input,.ant-form-item-children .ant-select-selection{
+  // background-color: #F0F2F5;
+  border-radius: 4px;
+}
+.reset{
+  border: none;
+}
+li.ant-pagination-item-active{
+  border-color: #1890ff;
+}
+// 弹框
+.ant-modal-body, .ant-modal-header{
+  padding: 20px
+}
+
+.ant-table-thead > tr > th, .ant-table-tbody > tr > td{
+  padding: 12px 10px
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  box-shadow:0 0 0 60px #fff inset;
+  -webkit-text-fill-color: #666;
+}
+.ant-modal-content{
+  .ant-form-horizontal{
+    input,textarea,.ant-select-selection,select{
+      width: 220px
+    }
+  }
+  .ant-modal-body{
+    padding: 20px 0 0;
+  }
+}
+
+.search {
+  .ant-select-dropdown{
+    //width: 220px!important;
+    width: 200px!important;
+  }
+}

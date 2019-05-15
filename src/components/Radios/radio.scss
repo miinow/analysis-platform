@@ -1,0 +1,17 @@
+.radios{
+  .name{
+    margin-right: 10px;
+  }
+  .ant-radio-group{
+    .ant-radio-wrapper{
+      color: #DFEAFC;
+      .ant-radio-inner{
+        background-color: #89A2CE;
+        border: 1px solid #5777A9;
+      }
+      .ant-radio-inner::after{
+        background-color: #223C76;
+      }
+    }
+  }
+}

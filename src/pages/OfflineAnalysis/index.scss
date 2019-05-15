@@ -1,0 +1,226 @@
+$fontColor: #DFEAFC;
+$fontColorH: #E3EDFD;
+$fontSize16: 16px;
+$fontSize18: 18px;
+$spacing20: 20px;
+$border: 1px solid rgba(255,255,255,0.20);
+.base{
+  background: rgba(255,255,255,0.07);
+  border-radius: 4px;
+}
+.box{
+  border: $border;
+}
+.loading-box {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.6);
+  //display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.offline {
+  color: $fontColor;
+  .title.highClass{
+    position: fixed;
+    top: 0;
+    width: calc(100% - 256px - 40px);
+    background-color: #305896;
+    z-index: 99;
+    box-shadow: 0 1px 5px #1e3c6b;
+  }
+  .title{
+    padding: $spacing20;
+    @extend .base;
+    .radios{
+      margin-left: $spacing20;
+      line-height: $spacing20;
+    }
+    // 查询按钮
+    .query{
+      width: 100px;
+      height: 36px;
+      background-color: #0CBCFB;
+      border-radius: 4px;
+    }
+  }
+  .h3{
+    font-size: $fontSize16;
+    color: $fontColorH;
+    margin: $spacing20 0;
+  }
+  // 文字说明
+  .font-info{
+    padding: $spacing20;
+    margin-bottom: $spacing20;
+    @extend .base;
+    .name, li{
+      span{
+        font-size: $fontSize18;
+      }
+    }
+  }
+  // 每个模块
+  .group{
+    border: 1px solid rgba(255,255,255,0.2);
+    margin-bottom: $spacing20;
+    .h4{
+      color: $fontColorH;
+      font-size: $fontSize16;
+      padding: $spacing20;
+      border-bottom: $border;
+    }
+  }
+  .group:hover{
+    border: 1px solid rgba(255,255,255,0.6);
+  }
+
+  .half {
+    width: 50%;
+    box-sizing: border-box;
+  }
+
+  .query-data{
+    padding: $spacing20;
+    border-bottom: $border;
+    .name{
+      margin-right: $spacing20
+    }
+  }
+  .dis.query-data{
+    line-height: 36px;
+    .name{
+      display: inline-block;
+    }
+  }
+  // 整体概况
+  .survey{
+    .situation{
+      .situation-chart{
+        .table{
+          border-right: $border;
+        }
+        .chart{
+          text-align: center;
+        }
+        .singleLine{
+          .error-wrapper{
+            min-height: 200px;
+          }
+        }
+      }
+    }
+    // 各城市销售分布
+    .city {
+      .module {
+        padding: $spacing20;
+      }
+      .table{
+        padding-top: 0;
+        border-top: $border;
+      }
+    }
+    //销售与会员
+    .sale-member{
+      .chart{
+        width: 100%;
+        .line{
+          border-right: $border;
+        }
+        .half {
+          padding: $spacing20
+        }
+      }
+    }
+  }
+
+
+  // 销售分析
+  .sale {
+    // 大区
+    .region{
+      border-top: $border;
+      border-bottom: $border;
+    }
+    // 分布
+    .depart{
+      .line-bar{
+        padding: $spacing20
+      }
+    }
+    // 品类
+    .cate {
+      .cate-chart{
+        .half.sale{
+          border-right: $border
+        }
+      }
+    }
+    .cate2-bar{
+      .stack-bar{
+        padding: $spacing20
+      }
+      .region-cate.query-data{
+        border-top: none;
+      }
+      .query-data{
+        border-top: $border
+      }
+      .heat-table-wrapper{
+        border-top: $border
+      }
+    }
+  }
+
+  // 购买会员分析
+  .member{
+    .r-m{
+      padding: $spacing20
+    }
+    .m{
+      padding-right: 10px;
+    }
+    .mem {
+      .chart{
+        border-bottom: $border;
+        .pie{
+          border-right: $border;
+        }
+      }
+    }
+    .frequency{
+      .chart{
+        .pie{
+          border-right: $border;
+        }
+        .table-list{
+          .ant-empty-normal{
+            margin: 0
+          }
+        }
+      }
+    }
+    .top20{
+      padding: $spacing20;
+      border-top: $border;
+    }
+  }
+  .pri-btn{
+    .ant-btn-primary{
+      background-color: #0CBCFB;
+      border-color: #0CBCFB;
+      border-radius: 4px;
+    }
+    .btn{
+      margin-left: 20px;
+    }
+  }
+  .pac20{
+    padding: $spacing20
+  }
+}
