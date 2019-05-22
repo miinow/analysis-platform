@@ -1,5 +1,5 @@
 ### Data-asset Management Platform
-
+ react+redux+react-router
 
 #### Directory
 
