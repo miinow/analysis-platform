@@ -148,5 +148,5 @@
       "git add"
     ]
   },
-  "proxy": "http://api.prod.bigdata.atguat.com.cn"
+  "proxy": "http://yapi.demo.qunar.com/mock/67520/"
 }

@@ -13,6 +13,7 @@ export const navData = [
         path: `${path}/marketing`,
         icon: 'sourceData',
         key: 'marketing',
+        redirect: basePath,
         component: StackBarPage
     },
     {
@@ -30,7 +31,7 @@ export const navData = [
                 path: `${path}/offlineTrade`,
                 key: 'offlineTrade',
                 component: OfflineAnalysis,
-                redirect: basePath
+                // redirect: basePath
             },
             { title: '订单流转分析', path: `${path}/orderTransfer`, key: 'orderTransfer', component: ExamplePage },
             { title: '订单转化分析', path: `${path}/orderTransform`, key: 'orderTransform', component: ExamplePage }
